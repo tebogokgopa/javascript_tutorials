@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <main class="main">
+        <h3>BGB Calculator</h3>
+        <div class="inside">
+            <div class="first_row">
+                <input type="text" name="num_input" id="num_input" readonly>
+            </div>
+            <div class="second_row">
+                <input type="reset" value="AC" id="msc" onclick="clearScreen()">
+                <input type="button" value="C" id="msc" >
+                <input type="button" value="+/-" id="msc" >
+                <input type="button" value="%" id="msc" >
+            </div>
+            <div class="second_row">
+                <input type="button" value="7" id="number" onclick="showNumber(value)">
+                <input type="button" value="8" id="number" onclick="showNumber(value)">
+                <input type="button" value="9" id="number" onclick="showNumber(value)">
+                <input type="button" value="+" id="operator" onclick="get_operator(value)">
+            </div>
+            <div class="second_row">
+                <input type="button" value="4" id="number" onclick="showNumber(value)">
+                <input type="button" value="5" id="number" onclick="showNumber(value)">
+                <input type="button" value="6" id="number" onclick="showNumber(value)">
+                <input type="button" value="-" id="operator" onclick="get_operator(value)">
+            </div>
+            <div class="second_row">
+                <input type="button" value="1" id="number" onclick="showNumber(value)">
+                <input type="button" value="2" id="number" onclick="showNumber(value)">
+                <input type="button" value="3" id="number" onclick="showNumber(value)">
+                <input type="button" value="x" id="operator" onclick="get_operator(value)">
+            </div>
+            <div class="second_row">
+                <input type="button" value="0" id="number"  onclick="showNumber(value)">
+                <input type="button" value="." id="number" onclick="showNumber(value)">
+                <input type="button" value="=" id="equals" onclick="calculate_resul()">
+                <input type="button" value="/" id="operator" onclick="get_operator(value)">
+            </div>
+        </div>
+        
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>

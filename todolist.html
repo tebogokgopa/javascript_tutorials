@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todolist.css">
+    <title>ToDoApp</title>
+</head>
+<body>
+    <main>
+        <h1>ToDo List App</h1>
+        <div class="add_item">
+            <input type="text" name="additem" id="additem" placeholder="Add todo item here">
+            <input type="button" value="Add Item" onclick="add_item()">
+        </div>
+        <div class="list_items">
+            <ul id="mainlist">
+                <li id="listitem"></li>
+            </ul>
+        </div>
+    </main>
+    <script src="todolist.js"></script>
+</body>
+</html>
